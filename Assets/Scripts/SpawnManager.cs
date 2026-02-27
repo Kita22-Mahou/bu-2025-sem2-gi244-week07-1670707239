@@ -4,6 +4,7 @@ public class SpawnManager : MonoBehaviour
 {
     public Transform spawnPoint;
     public GameObject obstaclePrefab;
+    public PlayerController player;
 
     void Start()
     {
@@ -18,10 +19,13 @@ public class SpawnManager : MonoBehaviour
 
     void Spawn()
     {
-        Instantiate(
-            obstaclePrefab,
-            spawnPoint.position,
-            obstaclePrefab.transform.rotation
-        );
+        if (player.isGameOver == false)
+        {
+            Instantiate(
+                obstaclePrefab,
+                spawnPoint.position,
+                obstaclePrefab.transform.rotation
+            );
+        }
     }
 }

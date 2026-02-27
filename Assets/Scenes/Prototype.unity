@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1183671265}
   obstaclePrefab: {fileID: 5880060462629876597, guid: b399d8bdb9842cd48b2fed7399485e66, type: 3}
+  player: {fileID: 1667492346595872697}
 --- !u!4 &132895512
 Transform:
   m_ObjectHideFlags: 0
@@ -461,6 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44325f5e4d001bc4fbd60e4b886be558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1667492346595872697}
 --- !u!114 &835818923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,8 +723,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8aa7337a3eba8d45a61a233ca0c9511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
-  gravityMultiplier: 1
+  jumpForce: 12
+  gravityMultiplier: 2
+  isGameOver: 0
 --- !u!65 &1667492346595872700
 BoxCollider:
   m_ObjectHideFlags: 0
